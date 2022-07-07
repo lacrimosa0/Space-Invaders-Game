@@ -1,5 +1,4 @@
 from turtle import Turtle
-import random
 
 
 # BOT CONFIGURATIONS
@@ -18,7 +17,7 @@ class Bots(Turtle):
             bot.shape("bot.gif")
             bot.penup()
             bot.setheading(270)
-            bot.goto(x,y)
+            bot.goto(x, y)
             x += 100
             self.all_bots.append(bot)
 
@@ -30,7 +29,7 @@ class Bots(Turtle):
             bot.shape("bot.gif")
             bot.penup()
             bot.setheading(270)
-            bot.goto(x,y)
+            bot.goto(x, y)
             x += 100
             self.all_bots.append(bot)
 
