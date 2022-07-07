@@ -76,7 +76,7 @@ while game_is_on:
 				if scoreboard.score == 15:
 					game_is_on = False
 					scoreboard.clear()
-					scoreboard.game_over()
+					scoreboard.show_score()
 
 	# check if bot bullets hit the player
 	# if there is a hit, player loses the game
@@ -85,14 +85,14 @@ while game_is_on:
 			turtle.write("Game is Over", align="center", font=("Courier", 30, "normal"))
 			game_is_on = False
 			scoreboard.clear()
-			scoreboard.game_over()
+			scoreboard.show_score()
 
 	# if bots pass the player, game is over
 	for bot in bots.all_bots:
 		if bot.ycor() < -260:
 			game_is_on = False
 			scoreboard.clear()
-			scoreboard.game_over()
+			scoreboard.show_score()
 
 	bots.move_bots()
 screen.mainloop()
