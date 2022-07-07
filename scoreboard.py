@@ -23,8 +23,3 @@ class ScoreBoard(Turtle):
         self.score += 1
         self.remaining_bots -= 1
         self.write(f"score: {self.score} - remaining bots: {self.remaining_bots}", align=ALIGNMENT, font=FONT)
-
-    def game_over(self):
-        self.penup()
-        self.goto(0, 250)
-        self.write(f"  Game Over! \nTotal Score: {self.score}", align=ALIGNMENT, font=("Courier", 30, "normal"))
